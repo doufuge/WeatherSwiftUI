@@ -11,7 +11,19 @@ import SwiftUI
 struct WeatherSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
+    }
+}
+
+extension View {
+    func getRect() -> CGRect {
+        return UIScreen.main.bounds
+    }
+}
+
+extension Int {
+    var cgFloat: CGFloat {
+        return CGFloat(self)
     }
 }

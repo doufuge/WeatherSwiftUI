@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DCA037462D663C6F00AE8134 /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCA037452D663C6F00AE8134 /* DotLottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DCA0371F2D662DAD00AE8134 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA037462D663C6F00AE8134 /* DotLottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				DCA037102D662DAB00AE8134 /* WeatherSwiftUI */,
 				DCA037212D662DAD00AE8134 /* WeatherSwiftUITests */,
 				DCA0372B2D662DAD00AE8134 /* WeatherSwiftUIUITests */,
+				DCA037442D663C6F00AE8134 /* Frameworks */,
 				DCA0370F2D662DAB00AE8134 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				DCA037282D662DAD00AE8134 /* WeatherSwiftUIUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DCA037442D663C6F00AE8134 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = WeatherSwiftUI;
 			packageProductDependencies = (
+				DCA037452D663C6F00AE8134 /* DotLottie */,
 			);
 			productName = WeatherSwiftUI;
 			productReference = DCA0370E2D662DAB00AE8134 /* WeatherSwiftUI.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = DCA037052D662DAB00AE8134;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DCA037432D663C6600AE8134 /* XCLocalSwiftPackageReference "../../../Downloads/dotlottie-ios-0.8.0" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DCA0370F2D662DAB00AE8134 /* Products */;
 			projectDirPath = "";
@@ -411,9 +428,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johny.WeatherSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -440,9 +461,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johny.WeatherSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -558,6 +583,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DCA037432D663C6600AE8134 /* XCLocalSwiftPackageReference "../../../Downloads/dotlottie-ios-0.8.0" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Downloads/dotlottie-ios-0.8.0";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCA037452D663C6F00AE8134 /* DotLottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCA037432D663C6600AE8134 /* XCLocalSwiftPackageReference "../../../Downloads/dotlottie-ios-0.8.0" */;
+			productName = DotLottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCA037062D662DAB00AE8134 /* Project object */;
 }

@@ -12,7 +12,7 @@ class SplashViewModel: ObservableObject {
     @Published var uiEvent: String?
     
     func onLoad() {
-        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { _ in
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { _ in
             self.uiEvent = "main"
         }
     }

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCA037462D663C6F00AE8134 /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = DCA037452D663C6F00AE8134 /* DotLottie */; };
+		DC1A44A02D6820C90040C261 /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = DC1A449F2D6820C90040C261 /* DotLottie */; };
+		DC1A44A32D6821B70040C261 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DC1A44A22D6821B70040C261 /* CombineMoya */; };
+		DC1A44A52D6821B70040C261 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DC1A44A42D6821B70040C261 /* Moya */; };
+		DC1A44A72D6821B70040C261 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DC1A44A62D6821B70040C261 /* ReactiveMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA037462D663C6F00AE8134 /* DotLottie in Frameworks */,
+				DC1A44A32D6821B70040C261 /* CombineMoya in Frameworks */,
+				DC1A44A72D6821B70040C261 /* ReactiveMoya in Frameworks */,
+				DC1A44A02D6820C90040C261 /* DotLottie in Frameworks */,
+				DC1A44A52D6821B70040C261 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +131,10 @@
 			);
 			name = WeatherSwiftUI;
 			packageProductDependencies = (
-				DCA037452D663C6F00AE8134 /* DotLottie */,
+				DC1A449F2D6820C90040C261 /* DotLottie */,
+				DC1A44A22D6821B70040C261 /* CombineMoya */,
+				DC1A44A42D6821B70040C261 /* Moya */,
+				DC1A44A62D6821B70040C261 /* ReactiveMoya */,
 			);
 			productName = WeatherSwiftUI;
 			productReference = DCA0370E2D662DAB00AE8134 /* WeatherSwiftUI.app */;
@@ -210,7 +219,8 @@
 			mainGroup = DCA037052D662DAB00AE8134;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DCA037432D663C6600AE8134 /* XCLocalSwiftPackageReference "../../../Downloads/dotlottie-ios-0.8.0" */,
+				DC1A449E2D6820C90040C261 /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
+				DC1A44A12D6821B70040C261 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DCA0370F2D662DAB00AE8134 /* Products */;
@@ -419,8 +429,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,8 +462,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,18 +594,45 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		DCA037432D663C6600AE8134 /* XCLocalSwiftPackageReference "../../../Downloads/dotlottie-ios-0.8.0" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../../Downloads/dotlottie-ios-0.8.0";
+/* Begin XCRemoteSwiftPackageReference section */
+		DC1A449E2D6820C90040C261 /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+		DC1A44A12D6821B70040C261 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DCA037452D663C6F00AE8134 /* DotLottie */ = {
+		DC1A449F2D6820C90040C261 /* DotLottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DCA037432D663C6600AE8134 /* XCLocalSwiftPackageReference "../../../Downloads/dotlottie-ios-0.8.0" */;
+			package = DC1A449E2D6820C90040C261 /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
 			productName = DotLottie;
+		};
+		DC1A44A22D6821B70040C261 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC1A44A12D6821B70040C261 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		DC1A44A42D6821B70040C261 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC1A44A12D6821B70040C261 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		DC1A44A62D6821B70040C261 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC1A44A12D6821B70040C261 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

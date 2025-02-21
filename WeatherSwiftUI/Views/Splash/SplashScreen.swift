@@ -12,6 +12,7 @@ struct SplashScreen: View {
     
     @Environment(\.colorScheme) var colorScheme
     @StateObject private var viewModel = SplashViewModel()
+    @State private var navigationPath = NavigationPath()
     
     var isDarkMode: Bool {
         colorScheme == .dark
@@ -30,10 +31,9 @@ struct SplashScreen: View {
                 .frame(width: 128, height: 128)
             Spacer()
             DotLottieAnimation(
-                fileName: isDarkMode ? "fishing-dark" : "fishing",
+                fileName: "splash",
                 config: AnimationConfig(autoplay: true, loop: true)
             ).view()
-                .ignoresSafeArea()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
         }
         .background(Color.bgSplash)
@@ -42,7 +42,9 @@ struct SplashScreen: View {
             viewModel.onLoad()
         }
         .onChange(of: viewModel.uiEvent) { _, newValue in
-            NSLog("Jump Main Screen")
+            if newValue == "main" {
+                MainScreen.present()
+            }
         }
     }
 }
